@@ -1,5 +1,5 @@
 module "run_command" {
-  source               = "github.com/DO-DRock/terraform-azurerm-vm-run-command.git"
+  source               = "github.com/ausbails/terraform-azurerm-vm-run-command.git"
   resource_group_name  = var.resource_group_name
   virtual_machine_name = azurerm_virtual_machine.linux.name
   os_type              = "linux"
