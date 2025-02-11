@@ -49,6 +49,7 @@ def buildmain(mgmtip):
     # The "feature" block is required for AzureRM provider 2.x. 
     # If you're using version 1.x, the "features" block is not allowed.
     version = "1.27.0"
+    skip_provider_registration = true
 
     subscription_id = "subid"
     client_id       = "clid"
@@ -58,7 +59,7 @@ def buildmain(mgmtip):
 locals {
   resource_group_name   = "class-resources"
   master_admin_username ="itadmin"
-  master_admin_password ="APTClass!"
+  master_admin_password ="APTPassw0rd!"
   master_domain         ="labs.local"
 }
 '''
